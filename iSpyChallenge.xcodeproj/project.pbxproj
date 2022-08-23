@@ -19,12 +19,12 @@
 		13C7A37C28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37B28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift */; };
 		13C7A37F28B47DBD007D3A79 /* NewChallengePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37E28B47DBD007D3A79 /* NewChallengePhotoViewController.swift */; };
 		13C7A38128B48107007D3A79 /* CreateNewChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38028B48107007D3A79 /* CreateNewChallengeViewController.swift */; };
-		13C7A38328B48144007D3A79 /* NewChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38228B48144007D3A79 /* NewChallengeViewModel.swift */; };
+		13C7A38328B48144007D3A79 /* NewChallengePhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38228B48144007D3A79 /* NewChallengePhotoViewModel.swift */; };
 		13C7A38528B482A6007D3A79 /* CreateNewChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38428B482A6007D3A79 /* CreateNewChallengeViewModel.swift */; };
 		13C7A38928B4A306007D3A79 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38828B4A306007D3A79 /* LocationManager.swift */; };
-		13C7A39128B4B2B1007D3A79 /* iSpyChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A39028B4B2B1007D3A79 /* iSpyChallengeTests.swift */; };
-		13C7A39E28B4B2B9007D3A79 /* iSpyChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A39D28B4B2B9007D3A79 /* iSpyChallengeUITests.swift */; };
-		13C7A3A028B4B2B9007D3A79 /* iSpyChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A39F28B4B2B9007D3A79 /* iSpyChallengeUITestsLaunchTests.swift */; };
+		13C7A39128B4B2B1007D3A79 /* CreateNewChallenegeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A39028B4B2B1007D3A79 /* CreateNewChallenegeViewModelTests.swift */; };
+		13C7A3A728B4B491007D3A79 /* NewChallengePhotoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A3A628B4B491007D3A79 /* NewChallengePhotoViewModelTests.swift */; };
+		13C7A3AB28B4B4E4007D3A79 /* NearMeChallengeDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A3AA28B4B4E4007D3A79 /* NearMeChallengeDetailsViewModelTests.swift */; };
 		3E5D324E2778230B004D1516 /* Collection+iSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D324D2778230B004D1516 /* Collection+iSpy.swift */; };
 		3E5D3251277A91F3004D1516 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D324F277A91F2004D1516 /* users.json */; };
 		3E5D3252277A91F3004D1516 /* challenges.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D3250277A91F2004D1516 /* challenges.json */; };
@@ -106,14 +106,14 @@
 		13C7A37B28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeDetailsViewModel.swift; sourceTree = "<group>"; };
 		13C7A37E28B47DBD007D3A79 /* NewChallengePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengePhotoViewController.swift; sourceTree = "<group>"; };
 		13C7A38028B48107007D3A79 /* CreateNewChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewChallengeViewController.swift; sourceTree = "<group>"; };
-		13C7A38228B48144007D3A79 /* NewChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengeViewModel.swift; sourceTree = "<group>"; };
+		13C7A38228B48144007D3A79 /* NewChallengePhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengePhotoViewModel.swift; sourceTree = "<group>"; };
 		13C7A38428B482A6007D3A79 /* CreateNewChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewChallengeViewModel.swift; sourceTree = "<group>"; };
 		13C7A38828B4A306007D3A79 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		13C7A38E28B4B2B1007D3A79 /* iSpyChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSpyChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		13C7A39028B4B2B1007D3A79 /* iSpyChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSpyChallengeTests.swift; sourceTree = "<group>"; };
+		13C7A39028B4B2B1007D3A79 /* CreateNewChallenegeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewChallenegeViewModelTests.swift; sourceTree = "<group>"; };
 		13C7A39B28B4B2B9007D3A79 /* iSpyChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSpyChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		13C7A39D28B4B2B9007D3A79 /* iSpyChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSpyChallengeUITests.swift; sourceTree = "<group>"; };
-		13C7A39F28B4B2B9007D3A79 /* iSpyChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSpyChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		13C7A3A628B4B491007D3A79 /* NewChallengePhotoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengePhotoViewModelTests.swift; sourceTree = "<group>"; };
+		13C7A3AA28B4B4E4007D3A79 /* NearMeChallengeDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		3E5D324D2778230B004D1516 /* Collection+iSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+iSpy.swift"; sourceTree = "<group>"; };
 		3E5D324F277A91F2004D1516 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		3E5D3250277A91F2004D1516 /* challenges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = challenges.json; sourceTree = "<group>"; };
@@ -215,7 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				13C7A38428B482A6007D3A79 /* CreateNewChallengeViewModel.swift */,
-				13C7A38228B48144007D3A79 /* NewChallengeViewModel.swift */,
+				13C7A38228B48144007D3A79 /* NewChallengePhotoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -268,18 +268,11 @@
 		13C7A38F28B4B2B1007D3A79 /* iSpyChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				13C7A39028B4B2B1007D3A79 /* iSpyChallengeTests.swift */,
+				13C7A39028B4B2B1007D3A79 /* CreateNewChallenegeViewModelTests.swift */,
+				13C7A3A628B4B491007D3A79 /* NewChallengePhotoViewModelTests.swift */,
+				13C7A3AA28B4B4E4007D3A79 /* NearMeChallengeDetailsViewModelTests.swift */,
 			);
 			path = iSpyChallengeTests;
-			sourceTree = "<group>";
-		};
-		13C7A39C28B4B2B9007D3A79 /* iSpyChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				13C7A39D28B4B2B9007D3A79 /* iSpyChallengeUITests.swift */,
-				13C7A39F28B4B2B9007D3A79 /* iSpyChallengeUITestsLaunchTests.swift */,
-			);
-			path = iSpyChallengeUITests;
 			sourceTree = "<group>";
 		};
 		3E5D3253277A9674004D1516 /* API */ = {
@@ -348,7 +341,6 @@
 				9660CD26263B2D0A006B9352 /* iSpySampleData */,
 				E0028786263A06EC00C65841 /* iSpyChallenge */,
 				13C7A38F28B4B2B1007D3A79 /* iSpyChallengeTests */,
-				13C7A39C28B4B2B9007D3A79 /* iSpyChallengeUITests */,
 				E0028785263A06EC00C65841 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -585,7 +577,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13C7A39128B4B2B1007D3A79 /* iSpyChallengeTests.swift in Sources */,
+				13C7A39128B4B2B1007D3A79 /* CreateNewChallenegeViewModelTests.swift in Sources */,
+				13C7A3AB28B4B4E4007D3A79 /* NearMeChallengeDetailsViewModelTests.swift in Sources */,
+				13C7A3A728B4B491007D3A79 /* NewChallengePhotoViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,8 +587,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13C7A39E28B4B2B9007D3A79 /* iSpyChallengeUITests.swift in Sources */,
-				13C7A3A028B4B2B9007D3A79 /* iSpyChallengeUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,7 +617,7 @@
 				3E5D325E277A96D4004D1516 /* APILocation.swift in Sources */,
 				3E5D3274277A9D7D004D1516 /* Rating.swift in Sources */,
 				3E5D3266277A9B7E004D1516 /* Match+iSpy.swift in Sources */,
-				13C7A38328B48144007D3A79 /* NewChallengeViewModel.swift in Sources */,
+				13C7A38328B48144007D3A79 /* NewChallengePhotoViewModel.swift in Sources */,
 				968A15DA264216C10017D10B /* RatingsTableViewController.swift in Sources */,
 				3E5D3278277E4FB5004D1516 /* URL+iSpy.swift in Sources */,
 				E089E980263A0A0F0054543D /* iSpyTabBarController.swift in Sources */,
@@ -912,13 +904,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9DQ6SL245T;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iSpyChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blueowl.iSpyChallenge-brandon";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueowl.iSpyChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -933,13 +925,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9DQ6SL245T;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iSpyChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blueowl.iSpyChallenge-brandon";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueowl.iSpyChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

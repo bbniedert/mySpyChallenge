@@ -11,7 +11,7 @@ class NewChallengePhotoViewController: UIViewController {
     @IBOutlet private weak var takePhotoButton: UIButton!
     @IBOutlet private weak var choosePhotoButton: UIButton!
     
-    private var viewModel: NewChallengeViewModel?
+    private var viewModel: NewChallengePhotoViewModel?
     
     // MARK: - Lifecycle
     
@@ -49,7 +49,7 @@ class NewChallengePhotoViewController: UIViewController {
         }
     }
     
-    func inject(viewModel: NewChallengeViewModel) {
+    func inject(viewModel: NewChallengePhotoViewModel) {
         self.viewModel = viewModel
     }
     

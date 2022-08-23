@@ -25,6 +25,8 @@ class NearMeChallengesViewModel {
         NotificationCenter.default.addObserver(self, selector: #selector(didRetrieveData), name: .dataControllerDidUpdate, object: dataController)
     }
     
+    
+    // Ideally location will be working right.  But if it is not, it defaults to the value provided in the documents.
     @objc private func didRetrieveData() {
         let currentLocation = LocationManager.shared.location ?? LocationManager.shared.mockedLocation
         

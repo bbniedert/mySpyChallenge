@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Location is used for challenge locations</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Location is used for challenge locations</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Location is used for challenge locations</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -28,6 +22,12 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Camera Access is needed to take a photo to add to a new challenge</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location is used for challenge locations</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Location is used for challenge locations</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is used for challenge locations</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

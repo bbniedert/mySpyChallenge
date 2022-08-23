@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NewChallengeViewModel {
+class NewChallengePhotoViewModel {
     private let dataController: DataController
     var selectedImage: UIImage?
     

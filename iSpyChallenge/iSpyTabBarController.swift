@@ -15,7 +15,7 @@ class iSpyTabBarController: UITabBarController {
         let challengesViewModel = NearMeChallengesViewModel(dataController: dataController)
         nearMeChallengesViewController?.inject(viewModel: challengesViewModel)
         
-        let newChallengeViewModel = NewChallengeViewModel(dataController: dataController)
+        let newChallengeViewModel = NewChallengePhotoViewModel(dataController: dataController)
         newChallengeViewController?.inject(viewModel: newChallengeViewModel)
         
         
