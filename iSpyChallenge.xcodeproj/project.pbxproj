@@ -17,6 +17,10 @@
 		13C7A37828B473E7007D3A79 /* NearMeChallengeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37728B473E7007D3A79 /* NearMeChallengeModel.swift */; };
 		13C7A37A28B47593007D3A79 /* NearMeChallengeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37928B47593007D3A79 /* NearMeChallengeDetailsViewController.swift */; };
 		13C7A37C28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37B28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift */; };
+		13C7A37F28B47DBD007D3A79 /* NewChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37E28B47DBD007D3A79 /* NewChallengeViewController.swift */; };
+		13C7A38128B48107007D3A79 /* CreateNewChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38028B48107007D3A79 /* CreateNewChallengeViewController.swift */; };
+		13C7A38328B48144007D3A79 /* NewChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38228B48144007D3A79 /* NewChallengeViewModel.swift */; };
+		13C7A38528B482A6007D3A79 /* CreateNewChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38428B482A6007D3A79 /* CreateNewChallengeViewModel.swift */; };
 		3E5D324E2778230B004D1516 /* Collection+iSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D324D2778230B004D1516 /* Collection+iSpy.swift */; };
 		3E5D3251277A91F3004D1516 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D324F277A91F2004D1516 /* users.json */; };
 		3E5D3252277A91F3004D1516 /* challenges.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D3250277A91F2004D1516 /* challenges.json */; };
@@ -79,6 +83,10 @@
 		13C7A37728B473E7007D3A79 /* NearMeChallengeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeModel.swift; sourceTree = "<group>"; };
 		13C7A37928B47593007D3A79 /* NearMeChallengeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeDetailsViewController.swift; sourceTree = "<group>"; };
 		13C7A37B28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeDetailsViewModel.swift; sourceTree = "<group>"; };
+		13C7A37E28B47DBD007D3A79 /* NewChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengeViewController.swift; sourceTree = "<group>"; };
+		13C7A38028B48107007D3A79 /* CreateNewChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewChallengeViewController.swift; sourceTree = "<group>"; };
+		13C7A38228B48144007D3A79 /* NewChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengeViewModel.swift; sourceTree = "<group>"; };
+		13C7A38428B482A6007D3A79 /* CreateNewChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewChallengeViewModel.swift; sourceTree = "<group>"; };
 		3E5D324D2778230B004D1516 /* Collection+iSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+iSpy.swift"; sourceTree = "<group>"; };
 		3E5D324F277A91F2004D1516 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		3E5D3250277A91F2004D1516 /* challenges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = challenges.json; sourceTree = "<group>"; };
@@ -165,6 +173,8 @@
 		13C7A35628B4568C007D3A79 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				13C7A38428B482A6007D3A79 /* CreateNewChallengeViewModel.swift */,
+				13C7A38228B48144007D3A79 /* NewChallengeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -187,18 +197,11 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		13C7A35928B456C0007D3A79 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				13C7A35A28B456C4007D3A79 /* Controllers */,
-				E089E986263A0C480054543D /* NewChallenge.storyboard */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		13C7A35A28B456C4007D3A79 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				13C7A38028B48107007D3A79 /* CreateNewChallengeViewController.swift */,
+				13C7A37E28B47DBD007D3A79 /* NewChallengeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -334,7 +337,8 @@
 		E089E982263A0BF70054543D /* New Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				13C7A35928B456C0007D3A79 /* Views */,
+				E089E986263A0C480054543D /* NewChallenge.storyboard */,
+				13C7A35A28B456C4007D3A79 /* Controllers */,
 				13C7A35628B4568C007D3A79 /* ViewModels */,
 			);
 			path = "New Challenge";
@@ -476,14 +480,18 @@
 				13C7A37C28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift in Sources */,
 				3E5D3258277A96A0004D1516 /* APIChallenge.swift in Sources */,
 				3E5D3276277D879D004D1516 /* RatingAndAssociatedUser.swift in Sources */,
+				13C7A37F28B47DBD007D3A79 /* NewChallengeViewController.swift in Sources */,
 				3E5D325E277A96D4004D1516 /* APILocation.swift in Sources */,
 				3E5D3274277A9D7D004D1516 /* Rating.swift in Sources */,
 				3E5D3266277A9B7E004D1516 /* Match+iSpy.swift in Sources */,
+				13C7A38328B48144007D3A79 /* NewChallengeViewModel.swift in Sources */,
 				968A15DA264216C10017D10B /* RatingsTableViewController.swift in Sources */,
 				3E5D3278277E4FB5004D1516 /* URL+iSpy.swift in Sources */,
 				E089E980263A0A0F0054543D /* iSpyTabBarController.swift in Sources */,
+				13C7A38128B48107007D3A79 /* CreateNewChallengeViewController.swift in Sources */,
 				3E5D3260277A980D004D1516 /* APIService.swift in Sources */,
 				96ABE80B2641E62C0045C456 /* UserTableViewController.swift in Sources */,
+				13C7A38528B482A6007D3A79 /* CreateNewChallengeViewModel.swift in Sources */,
 				3E5D3272277A9D6F004D1516 /* Match.swift in Sources */,
 				E002878A263A06EC00C65841 /* SceneDelegate.swift in Sources */,
 				3E5D325C277A96BD004D1516 /* APIRating.swift in Sources */,

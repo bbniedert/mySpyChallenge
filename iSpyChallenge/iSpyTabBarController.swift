@@ -13,7 +13,11 @@ class iSpyTabBarController: UITabBarController {
         super.viewDidLoad()
         
         let challengesViewModel = NearMeChallengesViewModel(dataController: dataController)
-        challengesListViewController?.inject(viewModel: challengesViewModel)
+        nearMeChallengesViewController?.inject(viewModel: challengesViewModel)
+        
+        let newChallengeViewModel = NewChallengeViewModel(dataController: dataController)
+        newChallengeViewController?.inject(viewModel: newChallengeViewModel)
+        
         
         dataBrowserViewController?.dataController = dataController
         
@@ -28,9 +32,15 @@ private extension iSpyTabBarController {
             .first
     }
     
-    var challengesListViewController: NearMeChallengesViewController? {
+    var nearMeChallengesViewController: NearMeChallengesViewController? {
         viewControllers?
             .compactMap { ($0 as? UINavigationController)?.viewControllers.first as? NearMeChallengesViewController }
+            .first
+    }
+    
+    var newChallengeViewController: NewChallengeViewController? {
+        viewControllers?
+            .compactMap { ($0 as? UINavigationController)?.viewControllers.first as? NewChallengeViewController }
             .first
     }
 }
