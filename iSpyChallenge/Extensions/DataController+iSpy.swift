@@ -13,9 +13,15 @@ extension DataController {
     }
     
     var allChallenges: [Challenge] {
-        let mockedChallenges = allUsers.flatMap { $0.challenges }
+        var challenges = allUsers.flatMap { $0.challenges }
+        let ids = challenges.map({ $0.id })
         let persistedChallenges = persistedChallenges()
-        return mockedChallenges + persistedChallenges
+        persistedChallenges.forEach({
+            if !ids.contains($0.id) {
+                challenges.append($0)
+            }
+        })
+        return challenges
     }
     
     func challenge(for id: String) -> Challenge? {

@@ -32,6 +32,7 @@ class CreateNewChallengeViewController: UIViewController {
     }
     
     @IBAction func didTapSubmit(_ sender: Any) {
+        hintTextField.resignFirstResponder()
         loadingSpinner.startAnimating()
         loadingSpinner.isHidden = false
         contentView.isHidden = true
