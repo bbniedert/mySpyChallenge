@@ -8,9 +8,10 @@
 import Foundation
 import CoreLocation
 
-class NearMeChallengesListViewModel {
+class NearMeChallengesViewModel {
     private let dataController: DataController
     private(set) var challenges: [NearMeChallengeModel]?
+    var selectedChallenge: NearMeChallengeModel?
     
     init(dataController: DataController) {
         self.dataController = dataController
@@ -24,6 +25,11 @@ class NearMeChallengesListViewModel {
     
     @objc private func didRetrieveData() {
         filterChallengesByLocation()
+    }
+    
+    func detailsViewModel() -> NearMeChallengeDetailsViewModel? {
+        guard let selectedId = selectedChallenge?.id else { return nil }
+        return NearMeChallengeDetailsViewModel(dataController: dataController, challengeId: selectedId)
     }
     
     func filterChallengesByLocation() {

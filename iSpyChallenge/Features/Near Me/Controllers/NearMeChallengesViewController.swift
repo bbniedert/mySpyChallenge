@@ -12,13 +12,19 @@ class NearMeChallengesViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var loadingSpinner: UIActivityIndicatorView!
     
-    private var viewModel: NearMeChallengesListViewModel?
+    private var viewModel: NearMeChallengesViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUpTableView()
         registerViewModelListener()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        viewModel?.selectedChallenge = nil
     }
     
     private func registerViewModelListener() {
@@ -39,8 +45,22 @@ class NearMeChallengesViewController: UIViewController {
         tableView.register(ChallengeTableViewCell.nib(), forCellReuseIdentifier: ChallengeTableViewCell.nibName)
     }
     
-    func inject(viewModel: NearMeChallengesListViewModel) {
+    func inject(viewModel: NearMeChallengesViewModel) {
         self.viewModel = viewModel
+    }
+    
+    // MARK: - Segues
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        injectProperties(viewController: segue.destination)
+    }
+    
+    // MARK: - Injection
+    
+    private func injectProperties(viewController: UIViewController) {
+        if let vc = viewController as? NearMeChallengeDetailsViewController {
+            vc.inject(viewModel: viewModel?.detailsViewModel())
+        }
     }
 }
 
@@ -63,6 +83,8 @@ extension NearMeChallengesViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("CELL")
+        viewModel?.selectedChallenge = viewModel?.challenges?[indexPath.row]
+        performSegue(withIdentifier: "ShowChallengeDetails", sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

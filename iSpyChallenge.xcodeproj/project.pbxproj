@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		13C7A35C28B45736007D3A79 /* NearMeChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A35B28B45736007D3A79 /* NearMeChallengesViewController.swift */; };
-		13C7A35E28B45743007D3A79 /* NearMeChallengesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A35D28B45743007D3A79 /* NearMeChallengesListViewModel.swift */; };
+		13C7A35E28B45743007D3A79 /* NearMeChallengesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A35D28B45743007D3A79 /* NearMeChallengesViewModel.swift */; };
 		13C7A36328B459A6007D3A79 /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A36128B459A6007D3A79 /* ChallengeTableViewCell.swift */; };
 		13C7A36428B459A6007D3A79 /* ChallengeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C7A36228B459A6007D3A79 /* ChallengeTableViewCell.xib */; };
 		13C7A36728B459C7007D3A79 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A36628B459C7007D3A79 /* Strings.swift */; };
 		13C7A36A28B45CF2007D3A79 /* NibBasedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A36928B45CF2007D3A79 /* NibBasedView.swift */; };
 		13C7A36E28B46737007D3A79 /* NSNotificationName+iSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A36D28B46737007D3A79 /* NSNotificationName+iSpy.swift */; };
 		13C7A37828B473E7007D3A79 /* NearMeChallengeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37728B473E7007D3A79 /* NearMeChallengeModel.swift */; };
+		13C7A37A28B47593007D3A79 /* NearMeChallengeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37928B47593007D3A79 /* NearMeChallengeDetailsViewController.swift */; };
+		13C7A37C28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37B28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift */; };
 		3E5D324E2778230B004D1516 /* Collection+iSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D324D2778230B004D1516 /* Collection+iSpy.swift */; };
 		3E5D3251277A91F3004D1516 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D324F277A91F2004D1516 /* users.json */; };
 		3E5D3252277A91F3004D1516 /* challenges.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D3250277A91F2004D1516 /* challenges.json */; };
@@ -68,13 +70,15 @@
 
 /* Begin PBXFileReference section */
 		13C7A35B28B45736007D3A79 /* NearMeChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengesViewController.swift; sourceTree = "<group>"; };
-		13C7A35D28B45743007D3A79 /* NearMeChallengesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengesListViewModel.swift; sourceTree = "<group>"; };
+		13C7A35D28B45743007D3A79 /* NearMeChallengesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengesViewModel.swift; sourceTree = "<group>"; };
 		13C7A36128B459A6007D3A79 /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
 		13C7A36228B459A6007D3A79 /* ChallengeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeTableViewCell.xib; sourceTree = "<group>"; };
 		13C7A36628B459C7007D3A79 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		13C7A36928B45CF2007D3A79 /* NibBasedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibBasedView.swift; sourceTree = "<group>"; };
 		13C7A36D28B46737007D3A79 /* NSNotificationName+iSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotificationName+iSpy.swift"; sourceTree = "<group>"; };
 		13C7A37728B473E7007D3A79 /* NearMeChallengeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeModel.swift; sourceTree = "<group>"; };
+		13C7A37928B47593007D3A79 /* NearMeChallengeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeDetailsViewController.swift; sourceTree = "<group>"; };
+		13C7A37B28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeDetailsViewModel.swift; sourceTree = "<group>"; };
 		3E5D324D2778230B004D1516 /* Collection+iSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+iSpy.swift"; sourceTree = "<group>"; };
 		3E5D324F277A91F2004D1516 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		3E5D3250277A91F2004D1516 /* challenges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = challenges.json; sourceTree = "<group>"; };
@@ -152,7 +156,8 @@
 		13C7A35528B45685007D3A79 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				13C7A35D28B45743007D3A79 /* NearMeChallengesListViewModel.swift */,
+				13C7A35D28B45743007D3A79 /* NearMeChallengesViewModel.swift */,
+				13C7A37B28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				13C7A35B28B45736007D3A79 /* NearMeChallengesViewController.swift */,
+				13C7A37928B47593007D3A79 /* NearMeChallengeDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -457,8 +463,9 @@
 				3E5D324E2778230B004D1516 /* Collection+iSpy.swift in Sources */,
 				3E5D3270277A9D63004D1516 /* Challenge.swift in Sources */,
 				E0028788263A06EC00C65841 /* AppDelegate.swift in Sources */,
+				13C7A37A28B47593007D3A79 /* NearMeChallengeDetailsViewController.swift in Sources */,
 				968A15D72642152A0017D10B /* MatchesTableViewController.swift in Sources */,
-				13C7A35E28B45743007D3A79 /* NearMeChallengesListViewModel.swift in Sources */,
+				13C7A35E28B45743007D3A79 /* NearMeChallengesViewModel.swift in Sources */,
 				3E5D3256277A9683004D1516 /* APIUser.swift in Sources */,
 				96ABE8082641CC890045C456 /* ChallengesTableViewController.swift in Sources */,
 				13C7A37828B473E7007D3A79 /* NearMeChallengeModel.swift in Sources */,
@@ -466,6 +473,7 @@
 				13C7A35C28B45736007D3A79 /* NearMeChallengesViewController.swift in Sources */,
 				3E5D325A277A96AE004D1516 /* APIMatch.swift in Sources */,
 				3E5D3268277A9B8D004D1516 /* Rating+iSpy.swift in Sources */,
+				13C7A37C28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift in Sources */,
 				3E5D3258277A96A0004D1516 /* APIChallenge.swift in Sources */,
 				3E5D3276277D879D004D1516 /* RatingAndAssociatedUser.swift in Sources */,
 				3E5D325E277A96D4004D1516 /* APILocation.swift in Sources */,

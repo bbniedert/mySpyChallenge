@@ -45,11 +45,43 @@
                     <connections>
                         <outlet property="loadingSpinner" destination="Kj2-lM-ivp" id="Iwa-ci-HsP"/>
                         <outlet property="tableView" destination="V3G-PI-imG" id="2fS-fp-6bG"/>
+                        <segue destination="2eM-ng-6uZ" kind="show" identifier="ShowChallengeDetails" id="afV-Oq-T3N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="co5-LT-UKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="1665"/>
+        </scene>
+        <!--Near Me Challenge Details View Controller-->
+        <scene sceneID="9HJ-3S-9kQ">
+            <objects>
+                <viewController id="2eM-ng-6uZ" customClass="NearMeChallengeDetailsViewController" customModule="iSpyChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M53-mI-o9f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VTJ-S0-7Fx">
+                                <rect key="frame" x="16" y="60" width="343" height="591"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BRf-wF-nca"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VTJ-S0-7Fx" firstAttribute="leading" secondItem="BRf-wF-nca" secondAttribute="leading" constant="16" id="GMt-CH-fWF"/>
+                            <constraint firstItem="BRf-wF-nca" firstAttribute="trailing" secondItem="VTJ-S0-7Fx" secondAttribute="trailing" constant="16" id="Sem-wU-zo9"/>
+                            <constraint firstItem="BRf-wF-nca" firstAttribute="bottom" secondItem="VTJ-S0-7Fx" secondAttribute="bottom" constant="16" id="om6-OA-Ud0"/>
+                            <constraint firstItem="VTJ-S0-7Fx" firstAttribute="top" secondItem="BRf-wF-nca" secondAttribute="top" constant="16" id="ywd-mx-prh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jcc-HS-grZ"/>
+                    <connections>
+                        <outlet property="challengeImageView" destination="VTJ-S0-7Fx" id="tOW-J0-Qht"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qas-Il-Iyl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1511" y="1665"/>
         </scene>
     </scenes>
     <resources>

@@ -16,6 +16,10 @@ extension DataController {
         allUsers.flatMap { $0.challenges }
     }
     
+    func challenge(for id: String) -> Challenge? {
+        allChallenges.first { $0.id == id }
+    }
+    
     func challenge(for match: Match) -> Challenge? {
         allChallenges.first { $0.matches.contains(match) }
     }

@@ -12,7 +12,7 @@ class iSpyTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let challengesViewModel = NearMeChallengesListViewModel(dataController: dataController)
+        let challengesViewModel = NearMeChallengesViewModel(dataController: dataController)
         challengesListViewController?.inject(viewModel: challengesViewModel)
         
         dataBrowserViewController?.dataController = dataController
