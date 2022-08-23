@@ -8,10 +8,12 @@
 import UIKit
 
 class NewChallengeViewController: UIViewController {
-    @IBOutlet weak var takePhotoButton: UIButton!
-    @IBOutlet weak var choosePhotoButton: UIButton!
+    @IBOutlet private weak var takePhotoButton: UIButton!
+    @IBOutlet private weak var choosePhotoButton: UIButton!
     
     private var viewModel: NewChallengeViewModel?
+    
+    // MARK: - Lifecycle
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,23 +25,14 @@ class NewChallengeViewController: UIViewController {
         }
     }
     
+    // MARK: - IBActions
+    
     @IBAction func takePhotoPressed(_ sender: Any) {
         openImagePicker(for: .camera)
     }
     
     @IBAction func choosePhotoPressed(_ sender: Any) {
         openImagePicker(for: .savedPhotosAlbum)
-    }
-    
-    private func openImagePicker(for type: UIImagePickerController.SourceType) {
-        if UIImagePickerController.isSourceTypeAvailable(type){
-            let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = type
-            imagePicker.allowsEditing = false
-            
-            present(imagePicker, animated: true, completion: nil)
-        }
     }
     
     // MARK: - Segues
@@ -59,7 +52,22 @@ class NewChallengeViewController: UIViewController {
     func inject(viewModel: NewChallengeViewModel) {
         self.viewModel = viewModel
     }
+    
+    // MARK: - View Management
+    
+    private func openImagePicker(for type: UIImagePickerController.SourceType) {
+        if UIImagePickerController.isSourceTypeAvailable(type){
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = type
+            imagePicker.allowsEditing = false
+            
+            present(imagePicker, animated: true, completion: nil)
+        }
+    }
 }
+
+// MARK: - UIImagePickerControllerDelegate
 
 extension NewChallengeViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

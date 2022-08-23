@@ -9,10 +9,14 @@ import UIKit
 
 // I chose a UIViewController over a UITableViewController because I like the organization that comes with implementing the data source and delegate in extensions
 class NearMeChallengesViewController: UIViewController {
+    
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var loadingSpinner: UIActivityIndicatorView!
     
     private var viewModel: NearMeChallengesViewModel?
+    
+    
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +31,8 @@ class NearMeChallengesViewController: UIViewController {
         viewModel?.selectedChallenge = nil
         tableView.reloadData()
     }
+    
+    // MARK: - View Management
     
     private func registerViewModelListener() {
         NotificationCenter.default.addObserver(self, selector: #selector(updateUI), name: .viewModelDidUpdate, object: viewModel)
@@ -48,10 +54,6 @@ class NearMeChallengesViewController: UIViewController {
         tableView.register(ChallengeTableViewCell.nib(), forCellReuseIdentifier: ChallengeTableViewCell.nibName)
     }
     
-    func inject(viewModel: NearMeChallengesViewModel) {
-        self.viewModel = viewModel
-    }
-    
     // MARK: - Segues
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -60,12 +62,18 @@ class NearMeChallengesViewController: UIViewController {
     
     // MARK: - Injection
     
+    func inject(viewModel: NearMeChallengesViewModel) {
+        self.viewModel = viewModel
+    }
+    
     private func injectProperties(viewController: UIViewController) {
         if let vc = viewController as? NearMeChallengeDetailsViewController {
             vc.inject(viewModel: viewModel?.detailsViewModel())
         }
     }
 }
+
+// MARK: - UITableViewDataSource
 
 extension NearMeChallengesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -79,6 +87,8 @@ extension NearMeChallengesViewController: UITableViewDataSource {
         return cell
     }
 }
+
+// MARK: - UITableViewDelegate
 
 extension NearMeChallengesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

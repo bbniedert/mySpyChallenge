@@ -13,9 +13,7 @@ class NearMeChallengeDetailsViewController: UIViewController {
     
     private var viewModel: NearMeChallengeDetailsViewModel?
     
-    func inject(viewModel: NearMeChallengeDetailsViewModel?) {
-        self.viewModel = viewModel
-    }
+    // MARK: - Lifecycle
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -25,4 +23,9 @@ class NearMeChallengeDetailsViewController: UIViewController {
         }
     }
     
+    // MARK: - Injection
+    
+    func inject(viewModel: NearMeChallengeDetailsViewModel?) {
+        self.viewModel = viewModel
+    }
 }

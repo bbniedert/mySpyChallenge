@@ -18,6 +18,8 @@ class CreateNewChallengeViewController: UIViewController {
     
     private var viewModel: CreateNewChallengeViewModel?
     
+    // MARK: - Lifecycle
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -30,6 +32,8 @@ class CreateNewChallengeViewController: UIViewController {
             submitButton.setTitle(viewModel.submitTitle, for: .normal)
         }
     }
+    
+    // MARK: - IBActions
     
     @IBAction func didTapSubmit(_ sender: Any) {
         hintTextField.resignFirstResponder()
@@ -56,6 +60,8 @@ class CreateNewChallengeViewController: UIViewController {
         viewModel?.hint = sender.text
         submitButton.isEnabled = (viewModel?.hint?.count ?? 0) > 0
     }
+    
+    // MARK: - Injection
     
     func inject(viewModel: CreateNewChallengeViewModel?) {
         self.viewModel = viewModel

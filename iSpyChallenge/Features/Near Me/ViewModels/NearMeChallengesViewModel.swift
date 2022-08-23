@@ -19,20 +19,13 @@ class NearMeChallengesViewModel {
         registerForDataControllerNotifications()
     }
     
+    // MARK: - Notifications
+    
     private func registerForDataControllerNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(didRetrieveData), name: .dataControllerDidUpdate, object: dataController)
     }
     
     @objc private func didRetrieveData() {
-        filterChallengesByLocation()
-    }
-    
-    func detailsViewModel() -> NearMeChallengeDetailsViewModel? {
-        guard let selectedId = selectedChallenge?.id else { return nil }
-        return NearMeChallengeDetailsViewModel(dataController: dataController, challengeId: selectedId)
-    }
-    
-    func filterChallengesByLocation() {
         let currentLocation = LocationManager.shared.location ?? LocationManager.shared.mockedLocation
         
         let challengeDisplayModels = dataController.allChallenges.map({ challenge -> NearMeChallengeModel in
@@ -52,5 +45,12 @@ class NearMeChallengesViewModel {
         self.challenges = challengeDisplayModels.sorted(by: { $0.distance < $1.distance })
         
         NotificationCenter.default.post(name: .viewModelDidUpdate, object: self)
+    }
+    
+    // MARK: - Injection Helper
+    
+    func detailsViewModel() -> NearMeChallengeDetailsViewModel? {
+        guard let selectedId = selectedChallenge?.id else { return nil }
+        return NearMeChallengeDetailsViewModel(dataController: dataController, challengeId: selectedId)
     }
 }
