@@ -37,15 +37,15 @@ class CreateNewChallengeViewController: UIViewController {
         loadingSpinner.isHidden = false
         contentView.isHidden = true
         viewModel?.submitChallenge() { success in
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [weak self] in
                 if success {
-                    self.navigationController?.popViewController(animated: true)
+                    self?.navigationController?.popViewController(animated: true)
                 } else {
-                    self.contentView.isHidden = false
-                    self.loadingSpinner.isHidden = true
+                    self?.contentView.isHidden = false
+                    self?.loadingSpinner.isHidden = true
                     let alert = UIAlertController(title: Strings.error, message: Strings.saveError, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: Strings.ok, style: .default))
-                    self.present(alert, animated: true, completion: nil)
+                    self?.present(alert, animated: true, completion: nil)
                 }
             }
         }
