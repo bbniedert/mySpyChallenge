@@ -22,6 +22,7 @@ class iSpyTabBarController: UITabBarController {
         dataBrowserViewController?.dataController = dataController
         
         dataController.loadAllData()
+        LocationManager.shared.start()
     }
 }
 

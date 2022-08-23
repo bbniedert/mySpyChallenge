@@ -33,7 +33,7 @@ class NearMeChallengesViewModel {
     }
     
     func filterChallengesByLocation() {
-        let currentLocation = CLLocation(latitude: 37.7904462, longitude: -122.4011537)
+        let currentLocation = LocationManager.shared.location ?? LocationManager.shared.mockedLocation
         
         let challengeDisplayModels = dataController.allChallenges.map({ challenge -> NearMeChallengeModel in
             let username = dataController.user(identifiedBy: challenge.creatorID)?.username

@@ -25,6 +25,12 @@ class CreateNewChallengeViewModel {
     
     func submitChallenge(completion: @escaping (Bool) -> Void) {
         guard let hint = hint, let image = image else { return }
-        dataController.createChallengeForCurrentUser(hint: hint, latitude: 0.0, longitude: 0.0, photoImageName: UUID().uuidString, image: image, completion: completion)
+        let currentLocation = LocationManager.shared.location ?? LocationManager.shared.mockedLocation
+        dataController.createChallengeForCurrentUser(hint: hint,
+                                                     latitude: currentLocation.coordinate.latitude,
+                                                     longitude: currentLocation.coordinate.longitude,
+                                                     photoImageName: UUID().uuidString,
+                                                     image: image,
+                                                     completion: completion)
     }
 }
