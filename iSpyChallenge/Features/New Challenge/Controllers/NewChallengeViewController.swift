@@ -66,7 +66,7 @@ extension NewChallengeViewController: UIImagePickerControllerDelegate, UINavigat
         dismiss(animated: true) {
             guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
             self.viewModel?.selectedImage = image
-            self.performSegue(withIdentifier: "ShowCreateNewChallenge", sender: self)
+            self.performSegue(withIdentifier: Strings.newChallengeSegue, sender: self)
         }
     }
 }

@@ -11,8 +11,8 @@ class NewChallengeViewModel {
     private let dataController: DataController
     var selectedImage: UIImage?
     
-    let chooseButtonTitle = "CHOOSE"
-    let takeButtonTitle = "TAKE"
+    let chooseButtonTitle = Strings.chooseButtonTitle
+    let takeButtonTitle = Strings.takeButtonTitle
     
     init(dataController: DataController) {
         self.dataController = dataController

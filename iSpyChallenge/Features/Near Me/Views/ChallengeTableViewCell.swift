@@ -16,12 +16,12 @@ class ChallengeTableViewCell: UITableViewCell, NibBasedView {
     @IBOutlet private weak var authorLabel: UILabel!
     
     func configure(for challenge: NearMeChallengeModel) {
-        winsLabel.text = String(format: "%d wins", challenge.wins)
-        ratingLabel.text = String(format: "%.2f stars", challenge.averageRating)
-        distanceLabel.text = String(format: "%.2fm", challenge.distance)
+        winsLabel.text = String(format: Strings.winsString, challenge.wins)
+        ratingLabel.text = String(format: Strings.ratingString, challenge.averageRating)
+        distanceLabel.text = String(format: Strings.distanceString, challenge.distance)
         hintLabel.text = challenge.hint
         if let username = challenge.userName {
-            authorLabel.text = "By: \(username)"
+            authorLabel.text = String(format: Strings.byString, username)
         } else {
             authorLabel.text = ""
         }

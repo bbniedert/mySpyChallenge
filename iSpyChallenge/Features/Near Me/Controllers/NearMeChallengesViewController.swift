@@ -38,8 +38,8 @@ class NearMeChallengesViewController: UIViewController {
             tableView.isHidden = false
             tableView.reloadData()
         } else {
-            let alert = UIAlertController(title: "Error", message: "Failed to load challenges", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            let alert = UIAlertController(title: Strings.error, message: Strings.loadError, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: Strings.ok, style: .default))
             self.present(alert, animated: true, completion: nil)
         }
     }
@@ -87,7 +87,7 @@ extension NearMeChallengesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel?.selectedChallenge = viewModel?.challenges?[indexPath.row]
-        performSegue(withIdentifier: "ShowChallengeDetails", sender: self)
+        performSegue(withIdentifier: Strings.detailsSegue, sender: self)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }

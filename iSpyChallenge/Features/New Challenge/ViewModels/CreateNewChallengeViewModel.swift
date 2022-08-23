@@ -14,9 +14,9 @@ class CreateNewChallengeViewModel {
     
     var hint: String?
     
-    let hintTitle = "Hint"
-    let hintPlaceholder = "Enter hint"
-    let submitTitle = "Submit"
+    let hintTitle = Strings.hintTitle
+    let hintPlaceholder = Strings.hintPlaceholder
+    let submitTitle = Strings.submit
     
     init(dataController: DataController, image: UIImage?) {
         self.dataController = dataController
