@@ -25,6 +25,6 @@ class CreateNewChallengeViewModel {
     
     func submitChallenge(completion: @escaping (Bool) -> Void) {
         guard let hint = hint, let image = image else { return }
-        dataController.createChallengeForCurrentUser(hint: hint, latitude: 0.0, longitude: 0.0, photoImageName: "alcatraz-island", completion: completion)
+        dataController.createChallengeForCurrentUser(hint: hint, latitude: 0.0, longitude: 0.0, photoImageName: UUID().uuidString, image: image, completion: completion)
     }
 }

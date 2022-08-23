@@ -5,6 +5,7 @@
 //
 
 import Foundation
+import UIKit
 
 class DataController {
     private let apiService: APIService
@@ -55,6 +56,7 @@ class DataController {
                                        latitude: Double,
                                        longitude: Double,
                                        photoImageName: String,
+                                       image: UIImage? = nil,
                                        completion: @escaping (_ success: Bool) -> Void) {
         guard let currentUser = currentUser else {
             completion(false)
@@ -67,7 +69,10 @@ class DataController {
                                  photoImageName: photoImageName) { result in
             switch result {
             case .success(let apiChallenge):
-                self.appendChallenge(Challenge(apiChallenge: apiChallenge), forUser: currentUser.id)
+                let challenge = Challenge(apiChallenge: apiChallenge)
+                self.appendChallenge(challenge, forUser: currentUser.id)
+                self.persistImage(image, named: photoImageName)
+                self.persistChallenge(challenge)
                 completion(true)
                 
             case .failure:
@@ -101,6 +106,25 @@ class DataController {
             }
         }
     }
+    
+    private func persistChallenge(_ challenge: Challenge) {
+        if let persistedChallengesData = UserDefaults.standard.data(forKey: "PersistedChallenges") {
+            var persistedChallenges = try? PropertyListDecoder().decode([Challenge].self, from: persistedChallengesData)
+            persistedChallenges?.append(challenge)
+            let data = try? PropertyListEncoder().encode(persistedChallenges)
+            UserDefaults.standard.set(data, forKey: "PersistedChallenges")
+        } else {
+            let data = try? PropertyListEncoder().encode([challenge])
+            UserDefaults.standard.set(data, forKey: "PersistedChallenges")
+        }
+    }
+    
+    private func persistImage(_ image: UIImage?, named name: String) {
+        if let image = image, let data = image.jpegData(compressionQuality: 0.7) {
+            let encodedImage = try? PropertyListEncoder().encode(data)
+            UserDefaults.standard.set(encodedImage, forKey: name)
+        }
+    }
 }
 
 // MARK: Helpers
@@ -121,8 +145,8 @@ private extension DataController {
     func appendMatch(_ match: Match, forChallenge challengeId: String) {
         guard let indexOfUserWhoOwnsChallenge = indexOfUser(whoOwnsChallenge: challengeId),
               let indexOfChallenge = indexOfChallenge(challengeId, forUserIndex: indexOfUserWhoOwnsChallenge) else {
-                  return
-              }
+            return
+        }
         
         DispatchQueue.main.async {
             self.allUsers[indexOfUserWhoOwnsChallenge]

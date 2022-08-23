@@ -20,6 +20,12 @@ class NearMeChallengeDetailsViewModel {
     
     var image: UIImage? {
         guard let imageName = challenge?.photoImageName else { return nil }
-        return UIImage(named: imageName)
+        if let image = UIImage(named: imageName) {
+            return image
+        } else if let storedImage = dataController.persistedImage(named: challenge?.photoImageName ?? "") {
+            return storedImage
+        } else {
+            return nil
+        }
     }
 }
