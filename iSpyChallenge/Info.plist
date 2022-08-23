@@ -20,6 +20,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera Access is needed to take a photo to add to a new challenge</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location is used for challenge locations</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Location is used for challenge locations</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is used for challenge locations</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

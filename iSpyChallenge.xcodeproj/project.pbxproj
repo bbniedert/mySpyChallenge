@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13C7A35C28B45736007D3A79 /* NearMeChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A35B28B45736007D3A79 /* NearMeChallengesViewController.swift */; };
+		13C7A35E28B45743007D3A79 /* NearMeChallengesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A35D28B45743007D3A79 /* NearMeChallengesViewModel.swift */; };
+		13C7A36328B459A6007D3A79 /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A36128B459A6007D3A79 /* ChallengeTableViewCell.swift */; };
+		13C7A36428B459A6007D3A79 /* ChallengeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C7A36228B459A6007D3A79 /* ChallengeTableViewCell.xib */; };
+		13C7A36728B459C7007D3A79 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A36628B459C7007D3A79 /* Strings.swift */; };
+		13C7A36A28B45CF2007D3A79 /* NibBasedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A36928B45CF2007D3A79 /* NibBasedView.swift */; };
+		13C7A36E28B46737007D3A79 /* NSNotificationName+iSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A36D28B46737007D3A79 /* NSNotificationName+iSpy.swift */; };
+		13C7A37828B473E7007D3A79 /* NearMeChallengeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37728B473E7007D3A79 /* NearMeChallengeModel.swift */; };
+		13C7A37A28B47593007D3A79 /* NearMeChallengeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37928B47593007D3A79 /* NearMeChallengeDetailsViewController.swift */; };
+		13C7A37C28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37B28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift */; };
+		13C7A37F28B47DBD007D3A79 /* NewChallengePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37E28B47DBD007D3A79 /* NewChallengePhotoViewController.swift */; };
+		13C7A38128B48107007D3A79 /* CreateNewChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38028B48107007D3A79 /* CreateNewChallengeViewController.swift */; };
+		13C7A38328B48144007D3A79 /* NewChallengePhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38228B48144007D3A79 /* NewChallengePhotoViewModel.swift */; };
+		13C7A38528B482A6007D3A79 /* CreateNewChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38428B482A6007D3A79 /* CreateNewChallengeViewModel.swift */; };
+		13C7A38928B4A306007D3A79 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38828B4A306007D3A79 /* LocationManager.swift */; };
+		13C7A39128B4B2B1007D3A79 /* CreateNewChallenegeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A39028B4B2B1007D3A79 /* CreateNewChallenegeViewModelTests.swift */; };
+		13C7A3A728B4B491007D3A79 /* NewChallengePhotoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A3A628B4B491007D3A79 /* NewChallengePhotoViewModelTests.swift */; };
+		13C7A3AB28B4B4E4007D3A79 /* NearMeChallengeDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A3AA28B4B4E4007D3A79 /* NearMeChallengeDetailsViewModelTests.swift */; };
 		3E5D324E2778230B004D1516 /* Collection+iSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D324D2778230B004D1516 /* Collection+iSpy.swift */; };
 		3E5D3251277A91F3004D1516 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D324F277A91F2004D1516 /* users.json */; };
 		3E5D3252277A91F3004D1516 /* challenges.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E5D3250277A91F2004D1516 /* challenges.json */; };
@@ -58,7 +76,44 @@
 		E089E991263A0C8E0054543D /* DataBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E089E98F263A0C8E0054543D /* DataBrowser.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		13C7A39228B4B2B1007D3A79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E002877C263A06EC00C65841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0028783263A06EC00C65841;
+			remoteInfo = iSpyChallenge;
+		};
+		13C7A3A128B4B2B9007D3A79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E002877C263A06EC00C65841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0028783263A06EC00C65841;
+			remoteInfo = iSpyChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		13C7A35B28B45736007D3A79 /* NearMeChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengesViewController.swift; sourceTree = "<group>"; };
+		13C7A35D28B45743007D3A79 /* NearMeChallengesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengesViewModel.swift; sourceTree = "<group>"; };
+		13C7A36128B459A6007D3A79 /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
+		13C7A36228B459A6007D3A79 /* ChallengeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeTableViewCell.xib; sourceTree = "<group>"; };
+		13C7A36628B459C7007D3A79 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		13C7A36928B45CF2007D3A79 /* NibBasedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibBasedView.swift; sourceTree = "<group>"; };
+		13C7A36D28B46737007D3A79 /* NSNotificationName+iSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotificationName+iSpy.swift"; sourceTree = "<group>"; };
+		13C7A37728B473E7007D3A79 /* NearMeChallengeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeModel.swift; sourceTree = "<group>"; };
+		13C7A37928B47593007D3A79 /* NearMeChallengeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeDetailsViewController.swift; sourceTree = "<group>"; };
+		13C7A37B28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeDetailsViewModel.swift; sourceTree = "<group>"; };
+		13C7A37E28B47DBD007D3A79 /* NewChallengePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengePhotoViewController.swift; sourceTree = "<group>"; };
+		13C7A38028B48107007D3A79 /* CreateNewChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewChallengeViewController.swift; sourceTree = "<group>"; };
+		13C7A38228B48144007D3A79 /* NewChallengePhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengePhotoViewModel.swift; sourceTree = "<group>"; };
+		13C7A38428B482A6007D3A79 /* CreateNewChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewChallengeViewModel.swift; sourceTree = "<group>"; };
+		13C7A38828B4A306007D3A79 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		13C7A38E28B4B2B1007D3A79 /* iSpyChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSpyChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C7A39028B4B2B1007D3A79 /* CreateNewChallenegeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewChallenegeViewModelTests.swift; sourceTree = "<group>"; };
+		13C7A39B28B4B2B9007D3A79 /* iSpyChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSpyChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C7A3A628B4B491007D3A79 /* NewChallengePhotoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengePhotoViewModelTests.swift; sourceTree = "<group>"; };
+		13C7A3AA28B4B4E4007D3A79 /* NearMeChallengeDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		3E5D324D2778230B004D1516 /* Collection+iSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+iSpy.swift"; sourceTree = "<group>"; };
 		3E5D324F277A91F2004D1516 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		3E5D3250277A91F2004D1516 /* challenges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = challenges.json; sourceTree = "<group>"; };
@@ -113,6 +168,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		13C7A38B28B4B2B1007D3A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C7A39828B4B2B8007D3A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0028781263A06EC00C65841 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -123,6 +192,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		130CD14F28B45656001E24DD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E089E984263A0C100054543D /* Data Browser */,
+				E089E983263A0C010054543D /* Near Me */,
+				E089E982263A0BF70054543D /* New Challenge */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		13C7A35528B45685007D3A79 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				13C7A35D28B45743007D3A79 /* NearMeChallengesViewModel.swift */,
+				13C7A37B28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		13C7A35628B4568C007D3A79 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				13C7A38428B482A6007D3A79 /* CreateNewChallengeViewModel.swift */,
+				13C7A38228B48144007D3A79 /* NewChallengePhotoViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		13C7A35728B4569B007D3A79 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				13C7A35B28B45736007D3A79 /* NearMeChallengesViewController.swift */,
+				13C7A37928B47593007D3A79 /* NearMeChallengeDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		13C7A35828B456B4007D3A79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13C7A36128B459A6007D3A79 /* ChallengeTableViewCell.swift */,
+				13C7A36228B459A6007D3A79 /* ChallengeTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		13C7A35A28B456C4007D3A79 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				13C7A38028B48107007D3A79 /* CreateNewChallengeViewController.swift */,
+				13C7A37E28B47DBD007D3A79 /* NewChallengePhotoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		13C7A36528B459BC007D3A79 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				13C7A36628B459C7007D3A79 /* Strings.swift */,
+				13C7A36928B45CF2007D3A79 /* NibBasedView.swift */,
+				13C7A38828B4A306007D3A79 /* LocationManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		13C7A37628B473DB007D3A79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13C7A37728B473E7007D3A79 /* NearMeChallengeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		13C7A38F28B4B2B1007D3A79 /* iSpyChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				13C7A39028B4B2B1007D3A79 /* CreateNewChallenegeViewModelTests.swift */,
+				13C7A3A628B4B491007D3A79 /* NewChallengePhotoViewModelTests.swift */,
+				13C7A3AA28B4B4E4007D3A79 /* NearMeChallengeDetailsViewModelTests.swift */,
+			);
+			path = iSpyChallengeTests;
+			sourceTree = "<group>";
+		};
 		3E5D3253277A9674004D1516 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +340,7 @@
 				E07E58892641E6F20026F912 /* NewChallenge.png */,
 				9660CD26263B2D0A006B9352 /* iSpySampleData */,
 				E0028786263A06EC00C65841 /* iSpyChallenge */,
+				13C7A38F28B4B2B1007D3A79 /* iSpyChallengeTests */,
 				E0028785263A06EC00C65841 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -196,6 +349,8 @@
 			isa = PBXGroup;
 			children = (
 				E0028784263A06EC00C65841 /* iSpyChallenge.app */,
+				13C7A38E28B4B2B1007D3A79 /* iSpyChallengeTests.xctest */,
+				13C7A39B28B4B2B9007D3A79 /* iSpyChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,16 +361,15 @@
 				E0028795263A06EC00C65841 /* Info.plist */,
 				E0028787263A06EC00C65841 /* AppDelegate.swift */,
 				E0028789263A06EC00C65841 /* SceneDelegate.swift */,
+				E089E97F263A0A0F0054543D /* iSpyTabBarController.swift */,
 				3E5D3253277A9674004D1516 /* API */,
+				13C7A36528B459BC007D3A79 /* Common */,
 				3E5D3269277A9D0F004D1516 /* Data */,
 				E07E587D263CAA570026F912 /* Extensions */,
+				130CD14F28B45656001E24DD /* Features */,
 				E0028790263A06EC00C65841 /* Assets.xcassets */,
 				E0028792263A06EC00C65841 /* LaunchScreen.storyboard */,
 				E002878D263A06EC00C65841 /* Main.storyboard */,
-				E089E97F263A0A0F0054543D /* iSpyTabBarController.swift */,
-				E089E982263A0BF70054543D /* New Challenge */,
-				E089E983263A0C010054543D /* Near Me */,
-				E089E984263A0C100054543D /* Data Browser */,
 			);
 			path = iSpyChallenge;
 			sourceTree = "<group>";
@@ -230,6 +384,7 @@
 				3E5D3265277A9B7E004D1516 /* Match+iSpy.swift */,
 				3E5D3267277A9B8D004D1516 /* Rating+iSpy.swift */,
 				3E5D3279277E5450004D1516 /* DataController+iSpy.swift */,
+				13C7A36D28B46737007D3A79 /* NSNotificationName+iSpy.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -238,6 +393,8 @@
 			isa = PBXGroup;
 			children = (
 				E089E986263A0C480054543D /* NewChallenge.storyboard */,
+				13C7A35A28B456C4007D3A79 /* Controllers */,
+				13C7A35628B4568C007D3A79 /* ViewModels */,
 			);
 			path = "New Challenge";
 			sourceTree = "<group>";
@@ -246,6 +403,10 @@
 			isa = PBXGroup;
 			children = (
 				E089E98B263A0C630054543D /* NearMe.storyboard */,
+				13C7A35728B4569B007D3A79 /* Controllers */,
+				13C7A37628B473DB007D3A79 /* Models */,
+				13C7A35828B456B4007D3A79 /* Views */,
+				13C7A35528B45685007D3A79 /* ViewModels */,
 			);
 			path = "Near Me";
 			sourceTree = "<group>";
@@ -271,6 +432,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		13C7A38D28B4B2B1007D3A79 /* iSpyChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C7A39428B4B2B1007D3A79 /* Build configuration list for PBXNativeTarget "iSpyChallengeTests" */;
+			buildPhases = (
+				13C7A38A28B4B2B1007D3A79 /* Sources */,
+				13C7A38B28B4B2B1007D3A79 /* Frameworks */,
+				13C7A38C28B4B2B1007D3A79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C7A39328B4B2B1007D3A79 /* PBXTargetDependency */,
+			);
+			name = iSpyChallengeTests;
+			productName = iSpyChallengeTests;
+			productReference = 13C7A38E28B4B2B1007D3A79 /* iSpyChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13C7A39A28B4B2B8007D3A79 /* iSpyChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C7A3A328B4B2B9007D3A79 /* Build configuration list for PBXNativeTarget "iSpyChallengeUITests" */;
+			buildPhases = (
+				13C7A39728B4B2B8007D3A79 /* Sources */,
+				13C7A39828B4B2B8007D3A79 /* Frameworks */,
+				13C7A39928B4B2B8007D3A79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C7A3A228B4B2B9007D3A79 /* PBXTargetDependency */,
+			);
+			name = iSpyChallengeUITests;
+			productName = iSpyChallengeUITests;
+			productReference = 13C7A39B28B4B2B9007D3A79 /* iSpyChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E0028783263A06EC00C65841 /* iSpyChallenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0028798263A06EC00C65841 /* Build configuration list for PBXNativeTarget "iSpyChallenge" */;
@@ -294,9 +491,17 @@
 		E002877C263A06EC00C65841 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					13C7A38D28B4B2B1007D3A79 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E0028783263A06EC00C65841;
+					};
+					13C7A39A28B4B2B8007D3A79 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E0028783263A06EC00C65841;
+					};
 					E0028783263A06EC00C65841 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -316,11 +521,27 @@
 			projectRoot = "";
 			targets = (
 				E0028783263A06EC00C65841 /* iSpyChallenge */,
+				13C7A38D28B4B2B1007D3A79 /* iSpyChallengeTests */,
+				13C7A39A28B4B2B8007D3A79 /* iSpyChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		13C7A38C28B4B2B1007D3A79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C7A39928B4B2B8007D3A79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0028782263A06EC00C65841 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -345,49 +566,94 @@
 				E07E588B2641E6F20026F912 /* NewChallenge.png in Resources */,
 				E089E991263A0C8E0054543D /* DataBrowser.storyboard in Resources */,
 				E07E588C2641E6F20026F912 /* NearMe.png in Resources */,
+				13C7A36428B459A6007D3A79 /* ChallengeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		13C7A38A28B4B2B1007D3A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C7A39128B4B2B1007D3A79 /* CreateNewChallenegeViewModelTests.swift in Sources */,
+				13C7A3AB28B4B4E4007D3A79 /* NearMeChallengeDetailsViewModelTests.swift in Sources */,
+				13C7A3A728B4B491007D3A79 /* NewChallengePhotoViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C7A39728B4B2B8007D3A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0028780263A06EC00C65841 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3E5D326B277A9D2C004D1516 /* DataController.swift in Sources */,
+				13C7A36728B459C7007D3A79 /* Strings.swift in Sources */,
 				3E5D324E2778230B004D1516 /* Collection+iSpy.swift in Sources */,
+				13C7A38928B4A306007D3A79 /* LocationManager.swift in Sources */,
 				3E5D3270277A9D63004D1516 /* Challenge.swift in Sources */,
 				E0028788263A06EC00C65841 /* AppDelegate.swift in Sources */,
+				13C7A37A28B47593007D3A79 /* NearMeChallengeDetailsViewController.swift in Sources */,
 				968A15D72642152A0017D10B /* MatchesTableViewController.swift in Sources */,
+				13C7A35E28B45743007D3A79 /* NearMeChallengesViewModel.swift in Sources */,
 				3E5D3256277A9683004D1516 /* APIUser.swift in Sources */,
 				96ABE8082641CC890045C456 /* ChallengesTableViewController.swift in Sources */,
+				13C7A37828B473E7007D3A79 /* NearMeChallengeModel.swift in Sources */,
 				E07E587B263C9EB10026F912 /* DataBrowserTableViewController.swift in Sources */,
+				13C7A35C28B45736007D3A79 /* NearMeChallengesViewController.swift in Sources */,
 				3E5D325A277A96AE004D1516 /* APIMatch.swift in Sources */,
 				3E5D3268277A9B8D004D1516 /* Rating+iSpy.swift in Sources */,
+				13C7A37C28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift in Sources */,
 				3E5D3258277A96A0004D1516 /* APIChallenge.swift in Sources */,
 				3E5D3276277D879D004D1516 /* RatingAndAssociatedUser.swift in Sources */,
+				13C7A37F28B47DBD007D3A79 /* NewChallengePhotoViewController.swift in Sources */,
 				3E5D325E277A96D4004D1516 /* APILocation.swift in Sources */,
 				3E5D3274277A9D7D004D1516 /* Rating.swift in Sources */,
 				3E5D3266277A9B7E004D1516 /* Match+iSpy.swift in Sources */,
+				13C7A38328B48144007D3A79 /* NewChallengePhotoViewModel.swift in Sources */,
 				968A15DA264216C10017D10B /* RatingsTableViewController.swift in Sources */,
 				3E5D3278277E4FB5004D1516 /* URL+iSpy.swift in Sources */,
 				E089E980263A0A0F0054543D /* iSpyTabBarController.swift in Sources */,
+				13C7A38128B48107007D3A79 /* CreateNewChallengeViewController.swift in Sources */,
 				3E5D3260277A980D004D1516 /* APIService.swift in Sources */,
 				96ABE80B2641E62C0045C456 /* UserTableViewController.swift in Sources */,
+				13C7A38528B482A6007D3A79 /* CreateNewChallengeViewModel.swift in Sources */,
 				3E5D3272277A9D6F004D1516 /* Match.swift in Sources */,
 				E002878A263A06EC00C65841 /* SceneDelegate.swift in Sources */,
 				3E5D325C277A96BD004D1516 /* APIRating.swift in Sources */,
 				968A15E0264221100017D10B /* MatchTableViewController.swift in Sources */,
 				3E5D3264277A9B6E004D1516 /* User+iSpy.swift in Sources */,
+				13C7A36A28B45CF2007D3A79 /* NibBasedView.swift in Sources */,
 				3E5D326E277A9D56004D1516 /* User.swift in Sources */,
+				13C7A36E28B46737007D3A79 /* NSNotificationName+iSpy.swift in Sources */,
 				968A15DD264219800017D10B /* ChallengeTableViewController.swift in Sources */,
+				13C7A36328B459A6007D3A79 /* ChallengeTableViewCell.swift in Sources */,
 				3E5D327A277E5450004D1516 /* DataController+iSpy.swift in Sources */,
 				3E5D3262277A9B5E004D1516 /* Challenge+iSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13C7A39328B4B2B1007D3A79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0028783263A06EC00C65841 /* iSpyChallenge */;
+			targetProxy = 13C7A39228B4B2B1007D3A79 /* PBXContainerItemProxy */;
+		};
+		13C7A3A228B4B2B9007D3A79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0028783263A06EC00C65841 /* iSpyChallenge */;
+			targetProxy = 13C7A3A128B4B2B9007D3A79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		968A15E2264227FD0017D10B /* Matches.storyboard */ = {
@@ -441,6 +707,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		13C7A39528B4B2B1007D3A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niedert.iSpyChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSpyChallenge.app/iSpyChallenge";
+			};
+			name = Debug;
+		};
+		13C7A39628B4B2B1007D3A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niedert.iSpyChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSpyChallenge.app/iSpyChallenge";
+			};
+			name = Release;
+		};
+		13C7A3A428B4B2B9007D3A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niedert.iSpyChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iSpyChallenge;
+			};
+			name = Debug;
+		};
+		13C7A3A528B4B2B9007D3A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niedert.iSpyChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iSpyChallenge;
+			};
+			name = Release;
+		};
 		E0028796263A06EC00C65841 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -562,7 +902,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iSpyChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -570,6 +912,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blueowl.iSpyChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -580,7 +923,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iSpyChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -588,6 +933,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blueowl.iSpyChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -596,6 +942,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		13C7A39428B4B2B1007D3A79 /* Build configuration list for PBXNativeTarget "iSpyChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C7A39528B4B2B1007D3A79 /* Debug */,
+				13C7A39628B4B2B1007D3A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C7A3A328B4B2B9007D3A79 /* Build configuration list for PBXNativeTarget "iSpyChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C7A3A428B4B2B9007D3A79 /* Debug */,
+				13C7A3A528B4B2B9007D3A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E002877F263A06EC00C65841 /* Build configuration list for PBXProject "iSpyChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

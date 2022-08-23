@@ -4,7 +4,7 @@
 //
 //
 
-import Foundation
+import UIKit
 
 // A set of convenience functions for navigating the data stored in DataController
 extension DataController {
@@ -13,7 +13,19 @@ extension DataController {
     }
     
     var allChallenges: [Challenge] {
-        allUsers.flatMap { $0.challenges }
+        var challenges = allUsers.flatMap { $0.challenges }
+        let ids = challenges.map({ $0.id })
+        let persistedChallenges = persistedChallenges()
+        persistedChallenges.forEach({
+            if !ids.contains($0.id) {
+                challenges.append($0)
+            }
+        })
+        return challenges
+    }
+    
+    func challenge(for id: String) -> Challenge? {
+        allChallenges.first { $0.id == id }
     }
     
     func challenge(for match: Match) -> Challenge? {
@@ -34,6 +46,23 @@ extension DataController {
         allChallenges
             .flatMap { $0.ratings }
             .filter { $0.creatorID == userId }
+    }
+    
+    func persistedImage(named name: String) -> UIImage? {
+        guard let data = UserDefaults.standard.data(forKey: name) else { return nil }
+        do {
+            let decoded = try PropertyListDecoder().decode(Data.self, from: data)
+            let image = UIImage(data: decoded)
+            return image
+        } catch {
+            return nil
+        }
+    }
+    
+    private func persistedChallenges() -> [Challenge] {
+        guard let data = UserDefaults.standard.data(forKey: "PersistedChallenges") else { return [] }
+        let challenges = try? PropertyListDecoder().decode([Challenge].self, from: data)
+        return challenges ?? []
     }
     
     /// Returns the original array of ratings, but with each rating paired with the user that created it.
