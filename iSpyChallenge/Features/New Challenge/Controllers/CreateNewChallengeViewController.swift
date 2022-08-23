@@ -43,6 +43,9 @@ class CreateNewChallengeViewController: UIViewController {
                 } else {
                     self.contentView.isHidden = false
                     self.loadingSpinner.isHidden = true
+                    let alert = UIAlertController(title: "Error", message: "Failed to save challenge", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default))
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
         }

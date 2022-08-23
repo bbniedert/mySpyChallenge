@@ -38,7 +38,9 @@ class NearMeChallengesViewController: UIViewController {
             tableView.isHidden = false
             tableView.reloadData()
         } else {
-            // ERROR
+            let alert = UIAlertController(title: "Error", message: "Failed to load challenges", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
