@@ -12,7 +12,7 @@
         <!--New Challenge-->
         <scene sceneID="lRq-BZ-e2H">
             <objects>
-                <viewController id="OMh-4b-EAq" customClass="NewChallengeViewController" customModule="iSpyChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OMh-4b-EAq" customClass="NewChallengePhotoViewController" customModule="iSpyChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ccn-6n-j0z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

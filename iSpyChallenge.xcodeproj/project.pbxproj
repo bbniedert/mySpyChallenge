@@ -17,7 +17,7 @@
 		13C7A37828B473E7007D3A79 /* NearMeChallengeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37728B473E7007D3A79 /* NearMeChallengeModel.swift */; };
 		13C7A37A28B47593007D3A79 /* NearMeChallengeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37928B47593007D3A79 /* NearMeChallengeDetailsViewController.swift */; };
 		13C7A37C28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37B28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift */; };
-		13C7A37F28B47DBD007D3A79 /* NewChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37E28B47DBD007D3A79 /* NewChallengeViewController.swift */; };
+		13C7A37F28B47DBD007D3A79 /* NewChallengePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A37E28B47DBD007D3A79 /* NewChallengePhotoViewController.swift */; };
 		13C7A38128B48107007D3A79 /* CreateNewChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38028B48107007D3A79 /* CreateNewChallengeViewController.swift */; };
 		13C7A38328B48144007D3A79 /* NewChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38228B48144007D3A79 /* NewChallengeViewModel.swift */; };
 		13C7A38528B482A6007D3A79 /* CreateNewChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7A38428B482A6007D3A79 /* CreateNewChallengeViewModel.swift */; };
@@ -104,7 +104,7 @@
 		13C7A37728B473E7007D3A79 /* NearMeChallengeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeModel.swift; sourceTree = "<group>"; };
 		13C7A37928B47593007D3A79 /* NearMeChallengeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeDetailsViewController.swift; sourceTree = "<group>"; };
 		13C7A37B28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeChallengeDetailsViewModel.swift; sourceTree = "<group>"; };
-		13C7A37E28B47DBD007D3A79 /* NewChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengeViewController.swift; sourceTree = "<group>"; };
+		13C7A37E28B47DBD007D3A79 /* NewChallengePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengePhotoViewController.swift; sourceTree = "<group>"; };
 		13C7A38028B48107007D3A79 /* CreateNewChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewChallengeViewController.swift; sourceTree = "<group>"; };
 		13C7A38228B48144007D3A79 /* NewChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengeViewModel.swift; sourceTree = "<group>"; };
 		13C7A38428B482A6007D3A79 /* CreateNewChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewChallengeViewModel.swift; sourceTree = "<group>"; };
@@ -242,7 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				13C7A38028B48107007D3A79 /* CreateNewChallengeViewController.swift */,
-				13C7A37E28B47DBD007D3A79 /* NewChallengeViewController.swift */,
+				13C7A37E28B47DBD007D3A79 /* NewChallengePhotoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -621,7 +621,7 @@
 				13C7A37C28B4773C007D3A79 /* NearMeChallengeDetailsViewModel.swift in Sources */,
 				3E5D3258277A96A0004D1516 /* APIChallenge.swift in Sources */,
 				3E5D3276277D879D004D1516 /* RatingAndAssociatedUser.swift in Sources */,
-				13C7A37F28B47DBD007D3A79 /* NewChallengeViewController.swift in Sources */,
+				13C7A37F28B47DBD007D3A79 /* NewChallengePhotoViewController.swift in Sources */,
 				3E5D325E277A96D4004D1516 /* APILocation.swift in Sources */,
 				3E5D3274277A9D7D004D1516 /* Rating.swift in Sources */,
 				3E5D3266277A9B7E004D1516 /* Match+iSpy.swift in Sources */,
@@ -912,7 +912,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9DQ6SL245T;
 				INFOPLIST_FILE = iSpyChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -933,7 +933,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9DQ6SL245T;
 				INFOPLIST_FILE = iSpyChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

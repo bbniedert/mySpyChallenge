@@ -23,6 +23,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         locationManager.delegate = self
     }
     
+    //It would be a better experience if this would just call requestLocation(), but in practice I wasnt getting the one location back fast enough, so I just stop updating location when I get the first one back.
     func start() {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
@@ -30,7 +31,9 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
+            print(location)
             self.location = location
+            locationManager.stopUpdatingLocation()
         }
     }
     

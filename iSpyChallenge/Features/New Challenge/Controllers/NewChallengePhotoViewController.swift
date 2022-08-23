@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NewChallengeViewController: UIViewController {
+class NewChallengePhotoViewController: UIViewController {
     @IBOutlet private weak var takePhotoButton: UIButton!
     @IBOutlet private weak var choosePhotoButton: UIButton!
     
@@ -69,7 +69,7 @@ class NewChallengeViewController: UIViewController {
 
 // MARK: - UIImagePickerControllerDelegate
 
-extension NewChallengeViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension NewChallengePhotoViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         dismiss(animated: true) {
             guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }

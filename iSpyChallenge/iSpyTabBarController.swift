@@ -39,9 +39,9 @@ private extension iSpyTabBarController {
             .first
     }
     
-    var newChallengeViewController: NewChallengeViewController? {
+    var newChallengeViewController: NewChallengePhotoViewController? {
         viewControllers?
-            .compactMap { ($0 as? UINavigationController)?.viewControllers.first as? NewChallengeViewController }
+            .compactMap { ($0 as? UINavigationController)?.viewControllers.first as? NewChallengePhotoViewController }
             .first
     }
 }
