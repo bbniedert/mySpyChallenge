@@ -11,8 +11,6 @@ class NewChallengeViewController: UIViewController {
     @IBOutlet weak var takePhotoButton: UIButton!
     @IBOutlet weak var choosePhotoButton: UIButton!
     
-    // DI This
-    private var imagePicker = UIImagePickerController()
     private var viewModel: NewChallengeViewModel?
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,13 +24,18 @@ class NewChallengeViewController: UIViewController {
     }
     
     @IBAction func takePhotoPressed(_ sender: Any) {
+        openImagePicker(for: .camera)
     }
     
     @IBAction func choosePhotoPressed(_ sender: Any) {
-        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
-            
+        openImagePicker(for: .savedPhotosAlbum)
+    }
+    
+    private func openImagePicker(for type: UIImagePickerController.SourceType) {
+        if UIImagePickerController.isSourceTypeAvailable(type){
+            let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
-            imagePicker.sourceType = .savedPhotosAlbum
+            imagePicker.sourceType = type
             imagePicker.allowsEditing = false
             
             present(imagePicker, animated: true, completion: nil)
