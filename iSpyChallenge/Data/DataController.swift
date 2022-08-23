@@ -6,12 +6,6 @@
 
 import Foundation
 
-extension NSNotification.Name {
-    /// Indicates that a `DataController` instance updated its data.
-    /// This notification is only fired on the main thread.
-    static let dataControllerDidUpdate = NSNotification.Name(rawValue: "dataControllerDidUpdate")
-}
-
 class DataController {
     private let apiService: APIService
     
