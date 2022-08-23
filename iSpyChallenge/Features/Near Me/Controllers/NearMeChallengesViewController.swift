@@ -25,6 +25,7 @@ class NearMeChallengesViewController: UIViewController {
         super.viewWillAppear(animated)
         
         viewModel?.selectedChallenge = nil
+        tableView.reloadData()
     }
     
     private func registerViewModelListener() {

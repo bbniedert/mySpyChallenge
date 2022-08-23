@@ -94,18 +94,53 @@
                                     <constraint firstAttribute="height" constant="200" id="xv7-eU-8cr"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2IS-9H-HoJ">
+                                <rect key="frame" x="32" y="334" width="311" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="didChangeText:" destination="GL5-zH-bmV" eventType="valueChanged" id="XWb-6P-Ai3"/>
+                                    <action selector="didUpdateHint:" destination="GL5-zH-bmV" eventType="editingChanged" id="l5M-wb-451"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgG-Rk-Fjk">
+                                <rect key="frame" x="32" y="310" width="311" height="16"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxB-U1-cFp">
+                                <rect key="frame" x="32" y="384" width="311" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="didTapSubmit:" destination="GL5-zH-bmV" eventType="touchUpInside" id="ktm-jC-Jrj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SIZ-by-F2l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="DgG-Rk-Fjk" firstAttribute="trailing" secondItem="cE2-q6-lrj" secondAttribute="trailing" id="0JD-iQ-nk9"/>
+                            <constraint firstItem="YxB-U1-cFp" firstAttribute="top" secondItem="2IS-9H-HoJ" secondAttribute="bottom" constant="16" id="3g9-zY-Gzp"/>
                             <constraint firstItem="cE2-q6-lrj" firstAttribute="top" secondItem="SIZ-by-F2l" secondAttribute="top" constant="50" id="Enm-ja-3mn"/>
                             <constraint firstItem="SIZ-by-F2l" firstAttribute="trailing" secondItem="cE2-q6-lrj" secondAttribute="trailing" constant="32" id="PFY-xd-jUW"/>
+                            <constraint firstItem="YxB-U1-cFp" firstAttribute="leading" secondItem="2IS-9H-HoJ" secondAttribute="leading" id="Yxa-Ff-QGV"/>
+                            <constraint firstItem="2IS-9H-HoJ" firstAttribute="top" secondItem="DgG-Rk-Fjk" secondAttribute="bottom" constant="8" id="as8-Xz-4zn"/>
+                            <constraint firstItem="DgG-Rk-Fjk" firstAttribute="top" secondItem="cE2-q6-lrj" secondAttribute="bottom" constant="16" id="fHE-D8-ueU"/>
+                            <constraint firstItem="YxB-U1-cFp" firstAttribute="trailing" secondItem="2IS-9H-HoJ" secondAttribute="trailing" id="heY-Av-BGy"/>
+                            <constraint firstItem="DgG-Rk-Fjk" firstAttribute="leading" secondItem="cE2-q6-lrj" secondAttribute="leading" id="ljT-6c-KgQ"/>
+                            <constraint firstItem="2IS-9H-HoJ" firstAttribute="trailing" secondItem="DgG-Rk-Fjk" secondAttribute="trailing" id="m5w-XE-FuG"/>
                             <constraint firstItem="cE2-q6-lrj" firstAttribute="leading" secondItem="SIZ-by-F2l" secondAttribute="leading" constant="32" id="m7O-Sz-OAJ"/>
+                            <constraint firstItem="2IS-9H-HoJ" firstAttribute="leading" secondItem="DgG-Rk-Fjk" secondAttribute="leading" id="z0h-xI-Xxl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ID4-7h-ahR"/>
                     <connections>
+                        <outlet property="hintLabel" destination="DgG-Rk-Fjk" id="s21-ns-JZ4"/>
+                        <outlet property="hintTextField" destination="2IS-9H-HoJ" id="3WU-W6-Bom"/>
                         <outlet property="newImageView" destination="cE2-q6-lrj" id="6zK-56-chI"/>
+                        <outlet property="submitButton" destination="YxB-U1-cFp" id="Ead-9w-4d7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1E2-Vp-e3e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
