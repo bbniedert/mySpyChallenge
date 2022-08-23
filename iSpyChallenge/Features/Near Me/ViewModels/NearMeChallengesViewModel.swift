@@ -38,7 +38,7 @@ class NearMeChallengesViewModel {
         let challengeDisplayModels = dataController.allChallenges.map({ challenge -> NearMeChallengeModel in
             let username = dataController.user(identifiedBy: challenge.creatorID)?.username
             let wins =  challenge.matches.filter( { $0.verified } ).count
-            let averageRating = Double(challenge.ratings.map( { $0.stars } ).reduce(0, +)) / Double(challenge.ratings.count)
+            let averageRating = challenge.ratings.count == 0 ? 0 : Double(challenge.ratings.map( { $0.stars } ).reduce(0, +)) / Double(challenge.ratings.count)
             let challengeLocation = CLLocation(latitude: challenge.latitude, longitude: challenge.longitude)
             
             return NearMeChallengeModel(id: challenge.id,
